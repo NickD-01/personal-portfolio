@@ -41,3 +41,27 @@ footer {
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
+
+/* programming languages */
+
+div {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.programming-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.programming-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+.programming-card:hover {
+    background-color: #eee;
+    transform: translateY(-1px);
+}

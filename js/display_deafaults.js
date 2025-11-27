@@ -10,14 +10,14 @@ elementsInNav.forEach(element => {
     // Create clickable link
     const a = document.createElement('a');
     a.href = element;
-    a.textContent = element.replace('.html', ''); // optional: cleaner text
+    a.textContent = element.replace('.html', ''); // optional: cleaner text, prePend: display js before html loads
 
     li.appendChild(a);
     ul.appendChild(li);
 });
 
 navigation.appendChild(ul);
-document.body.appendChild(navigation); // make it show on page
+document.body.prepend(navigation); // make it show on page
 // create footer
 const statusFooter = document.createElement('footer');
 statusFooter.id = "footercontent"
