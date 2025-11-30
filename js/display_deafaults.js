@@ -1,5 +1,7 @@
+
+
 // create navigation
-const elementsInNav = ["index.html","studies.html", "certifications.html"];
+const elementsInNav = ["index.html","studies.html", "certifications.html", "intrests.html"];
 
 const navigation = document.createElement('nav');
 const ul = document.createElement('ul');
