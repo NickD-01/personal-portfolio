@@ -19,7 +19,7 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: left;
+    justify-content: center;
 }
 nav a:hover {
     background-color: #ddd;
@@ -29,9 +29,9 @@ footer {
     padding: 20px;
     background-color: #333;
     color: white;
-    position: fixed;
     width: 100%;
     bottom: 0;
+
 }
 
 .projects, .achievements, .programming_languages {
@@ -44,7 +44,7 @@ footer {
 
 /* programming languages */
 
-div {
+.programming-container div {
     display: flex;
     flex-direction: column;
     padding: 1rem;

@@ -1,8 +1,55 @@
 /* My styles */
-.order {
-  text-align: center;
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background: #f4f4f4;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
+main {
+    flex: 1;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.cart {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.item, .total {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    font-size: 18px;
+    border-bottom: 1px solid #ddd;
+}
+
+.total {
+    font-weight: bold;
+    border-bottom: none;
+    margin-top: 10px;
+}
+
+button.order {
+    margin: 30px auto;
+    display: block;
+}
 
 /* Needed for button styles */
 :root {
@@ -28,7 +75,8 @@
   outline: none;
   cursor: pointer;
   border-radius: 32px;
-  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  -webkit-mask-image: -webkit-radial-gradient(white, black);/* fix for ios button bug */
+  mask-image: radial-gradient(white, black);
   -webkit-tap-highlight-color: transparent;
   overflow: hidden;
   transition: transform 0.3s ease;
