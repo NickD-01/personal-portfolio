@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Complete Order Button - Full Page</title>
+  <link rel="stylesheet" href="../css/shopping.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="../../js/shopping.js" defer></script>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      background: #f4f4f4;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+    }
+
+    main {
+      flex: 1;
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .cart {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .item, .total {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      font-size: 18px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .total {
+      font-weight: bold;
+      border-bottom: none;
+      margin-top: 10px;
+    }
+
+    button.order {
+      margin: 30px auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+    <main>
+        <h1>Shopping Cart</h1>
+        <div class="cart">
+            <div class="item">
+                <span class="name">Item 1</span>
+                <span class="price">$10.00</span>
+            </div>
+            <div class="item">
+                <span class="name">Item 2</span>
+                <span class="price">$15.00</span>
+            </div>
+            <div class="item">
+                <span class="name">Item 3</span>
+                <span class="price">$20.00</span>
+            </div>
+            <div class="total">
+                <span>Total:</span>
+                <span class="amount">$45.00</span>
+            </div>
+        </div>
+    </main>
+
+    <button class="order">
+        <span class="default">Complete Order</span>
+        <span class="success">Order Placed
+            <svg viewBox="0 0 12 10">
+                <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+            </svg>
+        </span>
+        <div class="box"></div>
+        <div class="truck">
+            <div class="back"></div>
+            <div class="front">
+                <div class="window"></div>
+            </div>
+            <div class="light top"></div>
+            <div class="light bottom"></div>
+        </div>
+        <div class="lines"></div>
+    </button>
+
+</body>
+</html>
